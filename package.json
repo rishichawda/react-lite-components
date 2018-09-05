@@ -1,0 +1,51 @@
+{
+  "name": "react-lite-components",
+  "sideEffects": false,
+  "version": "0.0.1",
+  "description": "a set of responsive light-weight react components",
+  "main": "/lib/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --mode development",
+    "build": "webpack --mode production --config webpack.config.js"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "light",
+    "weight",
+    "lightweight",
+    "responsive",
+    "library"
+  ],
+  "author": "rishichawda",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-hot-loader": "^4.3.6",
+    "styled-components": "^3.4.5",
+    "styled-system": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  }
+}
