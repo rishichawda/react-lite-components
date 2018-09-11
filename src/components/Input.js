@@ -13,8 +13,8 @@ const InputWrapper = styled.input`
     ${props => props.bg ? `background: ${props.bg};` : ``}
     ${props => props.border ? `border: ${props.border};` : ``}
     ${props => props.borderRadius ? `border-radius: ${props.borderRadius};` : ``}
+    ${props => props.m ? `margin: ${props.m};` : ``}
     padding : ${props => props.p};
-    margin: ${props => props.m};
 
     &:focus {
       border-bottom: 1px solid ${props => props.focusColor} !important;
@@ -39,7 +39,7 @@ Input.defaultProps = {
   h: null,
   w: null,
   bg: '#eee',
-  m: "0 10%",
+  m: null,
   placeholder: 'Type here',
   border: 'none',
   borderRadius: null,

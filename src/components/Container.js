@@ -26,6 +26,7 @@ const Container = (props) => (
 )
 
 Container.propTypes = {
+    children: PropTypes.arrayOf([PropTypes.node, PropTypes.element]),
     h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     bg: PropTypes.string,
