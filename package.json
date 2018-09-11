@@ -6,7 +6,8 @@
   "main": "/lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development",
-    "build": "webpack --mode production --config webpack.config.js"
+    "build": "webpack --mode production --config webpack.config.js",
+    "eslint": "./node_modules/.bin/eslint ./ --fix"
   },
   "keywords": [
     "react",
@@ -26,6 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "compression-webpack-plugin": "^2.0.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",

@@ -17,6 +17,7 @@ const ContainerWrapper = styled.div`
   }} 
     ${props => (props.bg ? `background: ${props.bg};` : '')}
     ${props => (props.m ? `margin: ${props.m}` : '')}
+    ${props => (props.p ? `padding: ${props.p}` : '')}
 `;
 
 const Container = (props) => {
@@ -34,6 +35,7 @@ Container.propTypes = {
   w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   bg: PropTypes.string,
   m: PropTypes.string,
+  p: PropTypes.string,
   fluid: PropTypes.bool,
 };
 
@@ -43,6 +45,7 @@ Container.defaultProps = {
   w: '70%',
   bg: null,
   m: 'auto',
+  p: '1%',
   fluid: false,
 };
 
