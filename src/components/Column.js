@@ -7,11 +7,11 @@ const ColumnWrapper = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-flow: row;
-    flex-grow: ${props => props.span};
+    grid-column: span ${props => props.span};
 
     @media only screen and (max-width: ${props => (props.break ? props.break : '600')}px) {
         flex-flow: column;
-        width: 100%;
+        grid-column: span 12;
     }
     ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
     ${props => (props.w ? `width : ${isNaN(props.w) ? props.w : `${props.w}px`};` : '')}
@@ -36,15 +36,19 @@ Col.propTypes = {
   bg: PropTypes.string,
   m: PropTypes.string,
   span: PropTypes.number,
+  break: PropTypes.number,
+  p: PropTypes.string,
 };
 
 Col.defaultProps = {
   children: null,
-  h: null,
+  h: 'fit-content',
   w: null,
   bg: null,
   m: null,
   span: 1,
+  p: '2%',
+  break: null,
 };
 
 export default Col;

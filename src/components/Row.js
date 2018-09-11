@@ -5,13 +5,10 @@ import styled from 'styled-components';
 /* eslint-disable no-restricted-globals */
 const RowWrapper = styled.div`
     box-sizing: border-box;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;  
+    display: grid;
+    grid-gap: 2% 0.5%;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
 
-    @media only screen and (max-width: ${props => (props.break ? props.break : '600')}px) {
-        flex-flow: column;
-    }
     ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
     ${props => (props.w ? `width : ${isNaN(props.w) ? props.w : `${props.w}px`};` : '')}
     ${props => (props.bg ? `background: ${props.bg};` : '')}

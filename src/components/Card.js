@@ -84,7 +84,7 @@ Container.propTypes = {
 Container.defaultProps = {
   children: null,
   h: null,
-  w: 300,
+  w: '100%',
   bg: null,
   m: null,
   p: '1%',
