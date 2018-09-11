@@ -5,18 +5,18 @@ import styled from 'styled-components';
 const ContainerWrapper = styled.div`
     box-sizing: border-box;
     ${props => props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` :`` }
-    ${props => props.w ? `width : ${isNaN(props.h) ? props.h : `${props.h}px`};` :`` }
-    ${props => props.bg ? `background: ${props.bg};` : ``}
     ${props => {
-        if(props.m !== '0 10%') {
-            return `margin: ${props.m};`;
-        } else {
+        if(props.w === '70%') {
             if(props.fluid) {
-                return `margin: 0;`
+                return 'width: 100%;';
             }
-            return `margin: ${props.m};`
+            return 'width: 70%;';
+        } else {
+            return `width : ${isNaN(props.h) ? props.h : `${props.h}px`};`;
         }
-    }}
+    }} 
+    ${props => props.bg ? `background: ${props.bg};` : ``}
+    ${props => props.m ? `margin: ${props.m}` : ``}
 `;
 
 const Container = (props) => (
@@ -36,9 +36,9 @@ Container.propTypes = {
 
 Container.defaultProps = {
     h: null,
-    w: null,
+    w: '70%',
     bg: null,
-    m: '0 10%',
+    m: 'auto',
     fluid: false,
 }
 
