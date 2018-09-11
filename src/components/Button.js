@@ -32,6 +32,7 @@ const getTextColor = type => {
 const ButtonWrapper = styled.button`
     box-sizing: border-box;
     cursor: pointer;
+    outline: none;
     ${props =>
       props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : ``}
     ${props =>
