@@ -7,3 +7,4 @@ export { default as Row } from './components/Row';
 export { default as Card } from './components/Card';
 export { default as Avatar } from './components/Avatar';
 export { default as Col } from './components/Column';
+export { default as Badge } from './components/Badge';
