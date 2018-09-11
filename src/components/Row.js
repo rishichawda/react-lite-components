@@ -7,6 +7,7 @@ const RowWrapper = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;  
 
     @media only screen and (max-width: ${props => (props.break ? props.break : '600')}px) {
         flex-flow: column;

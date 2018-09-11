@@ -3,50 +3,48 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 /* eslint-disable no-restricted-globals */
-const ContainerWrapper = styled.div`
+const ColumnWrapper = styled.div`
     box-sizing: border-box;
-    ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
-    ${(props) => {
-    if (props.w === '70%') {
-      if (props.fluid) {
-        return 'width: 100%;';
-      }
-      return 'width: 70%;';
+    display: flex;
+    flex-flow: row;
+    flex-grow: ${props => props.span};
+
+    @media only screen and (max-width: ${props => (props.break ? props.break : '600')}px) {
+        flex-flow: column;
+        width: 100%;
     }
-    return `width : ${isNaN(props.w) ? props.w : `${props.w}px`};`;
-  }} 
+    ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
+    ${props => (props.w ? `width : ${isNaN(props.w) ? props.w : `${props.w}px`};` : '')}
     ${props => (props.bg ? `background: ${props.bg};` : '')}
     ${props => (props.m ? `margin: ${props.m}` : '')}
     ${props => (props.p ? `padding: ${props.p}` : '')}
 `;
 
-const Container = (props) => {
+const Col = (props) => {
   const { children } = props;
   return (
-    <ContainerWrapper {...props}>
+    <ColumnWrapper {...props}>
       {children}
-    </ContainerWrapper>
+    </ColumnWrapper>
   );
 };
 
-Container.propTypes = {
+Col.propTypes = {
   children: PropTypes.arrayOf([PropTypes.node, PropTypes.element]),
   h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   bg: PropTypes.string,
   m: PropTypes.string,
-  p: PropTypes.string,
-  fluid: PropTypes.bool,
+  span: PropTypes.number,
 };
 
-Container.defaultProps = {
+Col.defaultProps = {
   children: null,
   h: null,
-  w: '70%',
+  w: null,
   bg: null,
-  m: 'auto',
-  p: '1%',
-  fluid: false,
+  m: null,
+  span: 1,
 };
 
-export default Container;
+export default Col;
