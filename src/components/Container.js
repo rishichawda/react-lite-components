@@ -9,12 +9,12 @@ const ContainerWrapper = styled.div`
     ${props => props.bg ? `background: ${props.bg};` : ``}
     ${props => {
         if(props.m !== '0 10%') {
-            return `margin: ${props.m}`;
+            return `margin: ${props.m};`;
         } else {
             if(props.fluid) {
-                return `margin: 0`
+                return `margin: 0;`
             }
-            return `margin: ${props.m}`
+            return `margin: ${props.m};`
         }
     }}
 `;
@@ -29,14 +29,16 @@ Container.propTypes = {
     h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     bg: PropTypes.string,
-    m: PropTypes.string
+    m: PropTypes.string,
+    fluid: PropTypes.bool,
 };
 
 Container.defaultProps = {
     h: null,
     w: null,
     bg: null,
-    m: '0 10%'
+    m: '0 10%',
+    fluid: false,
 }
 
 export default Container;
