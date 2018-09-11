@@ -7,6 +7,16 @@ const ContainerWrapper = styled.div`
     ${props => props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` :`` }
     ${props => props.w ? `width : ${isNaN(props.h) ? props.h : `${props.h}px`};` :`` }
     ${props => props.bg ? `background: ${props.bg};` : ``}
+    ${props => {
+        if(props.m !== '0 10%') {
+            return `margin: ${props.m}`;
+        } else {
+            if(props.fluid) {
+                return `margin: 0`
+            }
+            return `margin: ${props.m}`
+        }
+    }}
 `;
 
 const Container = (props) => (
@@ -19,12 +29,14 @@ Container.propTypes = {
     h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     w: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     bg: PropTypes.string,
+    m: PropTypes.string
 };
 
 Container.defaultProps = {
     h: null,
     w: null,
     bg: null,
+    m: '0 10%'
 }
 
 export default Container;
