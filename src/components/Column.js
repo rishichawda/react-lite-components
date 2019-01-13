@@ -1,31 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-/* eslint-disable no-restricted-globals */
-const ColumnWrapper = styled.div`
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row;
-    grid-column: span ${props => props.span};
-
-    @media only screen and (max-width: ${props => (props.break ? props.break : '600')}px) {
-        flex-flow: column;
-        grid-column: span 12;
-    }
-    ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
-    ${props => (props.w ? `width : ${isNaN(props.w) ? props.w : `${props.w}px`};` : '')}
-    ${props => (props.bg ? `background: ${props.bg};` : '')}
-    ${props => (props.m ? `margin: ${props.m}` : '')}
-    ${props => (props.p ? `padding: ${props.p}` : '')}
-`;
+import { atoms } from '../core';
 
 const Col = (props) => {
   const { children } = props;
   return (
-    <ColumnWrapper {...props}>
+    <atoms.ColumnWrapper {...props}>
       {children}
-    </ColumnWrapper>
+    </atoms.ColumnWrapper>
   );
 };
 

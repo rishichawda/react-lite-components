@@ -1,17 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-const ImageWrapper = styled.img`
-    ${props => (props.w !== 'auto'
-    ? `width: ${props.w};
-        height: auto;`
-    : `width: ${props.w};
-        height: ${props.h};`)}
-`;
+import { atoms } from '../core';
 
 const Image = props => (
-  <ImageWrapper {...props} />
+  <atoms.ImageWrapper {...props} />
 );
 
 Image.propTypes = {

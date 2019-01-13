@@ -1,31 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-/* eslint-disable no-restricted-globals */
-const ContainerWrapper = styled.div`
-    box-sizing: border-box;
-    ${props => (props.h ? `height : ${isNaN(props.h) ? props.h : `${props.h}px`};` : '')}
-    ${(props) => {
-    if (props.w === '70%') {
-      if (props.fluid) {
-        return 'width: 100%;';
-      }
-      return 'width: 70%;';
-    }
-    return `width : ${isNaN(props.w) ? props.w : `${props.w}px`};`;
-  }} 
-    ${props => (props.bg ? `background: ${props.bg};` : '')}
-    ${props => (props.m ? `margin: ${props.m}` : '')}
-    ${props => (props.p ? `padding: ${props.p}` : '')}
-`;
+import { atoms } from '../core';
 
 const Container = (props) => {
   const { children } = props;
   return (
-    <ContainerWrapper {...props}>
+    <atoms.ContainerWrapper {...props}>
       {children}
-    </ContainerWrapper>
+    </atoms.ContainerWrapper>
   );
 };
 
