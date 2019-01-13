@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { RowWrapper } from '../core';
 
-/* eslint-disable no-restricted-globals */
-
-
 const Row = (props) => {
   const { children } = props;
   return (

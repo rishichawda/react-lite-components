@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { InputWrapper } from '../core';
-/* eslint-disable no-restricted-globals */
-
 
 const Input = props => <InputWrapper {...props} />;
 

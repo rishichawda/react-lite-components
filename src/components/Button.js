@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ButtonWrapper } from '../core';
 
-/* eslint-disable no-restricted-globals */
-
 const Button = (props) => {
   const { children } = props;
   return <ButtonWrapper {...props}>{children}</ButtonWrapper>;
