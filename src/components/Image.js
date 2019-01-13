@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { atoms } from '../core';
+import { ImageWrapper } from '../core';
 
 const Image = props => (
-  <atoms.ImageWrapper {...props} />
+  <ImageWrapper {...props} />
 );
 
 Image.propTypes = {

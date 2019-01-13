@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { atoms } from '../core';
+import { ButtonWrapper } from '../core';
 
 /* eslint-disable no-restricted-globals */
 
 const Button = (props) => {
   const { children } = props;
-  return <atoms.ButtonWrapper {...props}>{children}</atoms.ButtonWrapper>;
+  return <ButtonWrapper {...props}>{children}</ButtonWrapper>;
 };
 
 Button.propTypes = {

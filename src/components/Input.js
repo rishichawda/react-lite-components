@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { atoms } from '../core';
+import { InputWrapper } from '../core';
 /* eslint-disable no-restricted-globals */
 
 
-const Input = props => <atoms.InputWrapper {...props} />;
+const Input = props => <InputWrapper {...props} />;
 
 Input.propTypes = {
   h: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

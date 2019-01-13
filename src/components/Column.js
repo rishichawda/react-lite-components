@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { atoms } from '../core';
+import { ColumnWrapper } from '../core';
 
 const Col = (props) => {
   const { children } = props;
   return (
-    <atoms.ColumnWrapper {...props}>
+    <ColumnWrapper {...props}>
       {children}
-    </atoms.ColumnWrapper>
+    </ColumnWrapper>
   );
 };
 

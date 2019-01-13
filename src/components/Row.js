@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { atoms } from '../core';
+import { RowWrapper } from '../core';
 
 /* eslint-disable no-restricted-globals */
 
@@ -8,9 +8,9 @@ import { atoms } from '../core';
 const Row = (props) => {
   const { children } = props;
   return (
-    <atoms.RowWrapper {...props}>
+    <RowWrapper {...props}>
       {children}
-    </atoms.RowWrapper>
+    </RowWrapper>
   );
 };
 
