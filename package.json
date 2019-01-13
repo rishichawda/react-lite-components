@@ -1,7 +1,7 @@
 {
   "name": "react-lite-components",
   "sideEffects": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a set of responsive light-weight react components",
   "main": "/lib/index.js",
   "scripts": {
