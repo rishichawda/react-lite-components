@@ -20,3 +20,12 @@ ${baseStyle}
 ${props => (props.color ? `color: ${props.color};` : '')}
 font-size: ${props => (props.size ? props.size : size.font.lg)};
 `;
+
+export const StyledLink = styled.a`
+${baseStyle}
+color: ${props => (props.color ? props.color : color.primary)};
+${props => (props.nounderline ? 'text-decoration: none;' : '')}
+&:hover {
+    color: ${props => (props.hoverColor ? props.hoverColor : color.primaryDark)};
+}
+`;
