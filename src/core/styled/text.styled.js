@@ -23,6 +23,7 @@ font-size: ${props => (props.size ? props.size : size.font.lg)};
 
 export const StyledLink = styled.a`
 ${baseStyle}
+cursor: pointer;
 color: ${props => (props.color ? props.color : color.primary)};
 ${props => (props.nounderline ? 'text-decoration: none;' : '')}
 &:hover {

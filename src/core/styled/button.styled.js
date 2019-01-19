@@ -7,6 +7,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 line-height: normal;
+cursor: pointer;
 color: ${props => (props ? props.color : color.light)};
 background-color: ${props => (props ? props.bg : color.primary)};
 ${boxStyle}
