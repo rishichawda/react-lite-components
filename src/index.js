@@ -1,10 +1,6 @@
-// Basic Components
-export { default as Container } from './components/Container';
-export { default as Input } from './components/Input';
-export { default as Button } from './components/Button';
-export { default as Image } from './components/Image';
-export { default as Row } from './components/Row';
-export { default as Card } from './components/Card';
-export { default as Avatar } from './components/Avatar';
-export { default as Col } from './components/Column';
-export { default as Badge } from './components/Badge';
+import './index.scss';
+
+export { default as Text } from './components/text';
+export { default as Header } from './components/header';
+export { default as Link } from './components/link';
+export { default as Button } from './components/button';
