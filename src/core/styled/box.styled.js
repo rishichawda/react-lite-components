@@ -19,5 +19,5 @@ flex-direction: row;
 `;
 
 Flex.column = styled(Flex)`
-flex-directon: column;
+flex-direction: column;
 `;
