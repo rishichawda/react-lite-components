@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, size } from '../commons';
+import { color, size } from 'core/commons';
 
 const baseStyle = `
 font-family: Roboto;

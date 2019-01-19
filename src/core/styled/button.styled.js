@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { color } from '../commons';
-import { baseStyle as boxStyle } from './box.styled';
+import { color } from 'core/commons';
+import { baseStyle as boxStyle } from 'core/styled/box.styled';
 
 const StyledButton = styled.div`
 font-family: Roboto;

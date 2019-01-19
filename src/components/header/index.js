@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledHeader } from '../../core/styled/text.styled';
-import { size as sizes } from '../../core/commons';
+import { StyledHeader } from 'core/styled/text.styled';
+import { size as sizes } from 'core/commons';
 
 const Header = ({ children, style, size }) => {
   const styles = style || undefined;

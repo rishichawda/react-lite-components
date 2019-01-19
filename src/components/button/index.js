@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import StyledButton from '../../core/styled/button.styled';
-import { color } from '../../core/commons';
+import StyledButton from 'core/styled/button.styled';
+import { color } from 'core/commons';
 
 const Button = ({
   children, style, type, bg, fontColor, ...rest

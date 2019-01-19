@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledLink } from '../../core/styled/text.styled';
-import { size as sizes } from '../../core/commons';
+import { StyledLink } from 'core/styled/text.styled';
+import { size as sizes } from 'core/commons';
 
 const Link = ({
   children, style, size, ...rest
