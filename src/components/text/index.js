@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledText } from '../../core/atoms/text.styled';
+import { StyledText } from '../../core/styled/text.styled';
 import { size as sizes } from '../../core/commons';
 
 const Text = ({ children, style, size }) => {

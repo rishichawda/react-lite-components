@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledLink } from '../../core/atoms/text.styled';
+import { StyledLink } from '../../core/styled/text.styled';
 import { size as sizes } from '../../core/commons';
 
 const Link = ({
