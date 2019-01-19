@@ -13,6 +13,13 @@ const Image = ({ style, ...rest }) => {
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
+  w: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  h: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+};
+
+Image.defaultProps = {
+  w: undefined,
+  h: undefined,
 };
 
 export default Image;
