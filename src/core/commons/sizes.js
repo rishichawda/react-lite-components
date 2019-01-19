@@ -1,7 +1,9 @@
 export default {
-  fontSizeXS: '11px',
-  fontSizeSM: '13px',
-  fontSizeMD: '15px',
-  fontSizeLG: '17px',
-  fontSizeXL: '19px',
+  font: {
+    xs: '11px',
+    sm: '13px',
+    md: '15px',
+    lg: '17px',
+    xl: '19px',
+  },
 };
