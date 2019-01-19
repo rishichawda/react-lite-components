@@ -16,4 +16,4 @@ export default {
   light: '#FFFFFF',
   lightSecondary: '#ECE8E8',
   lightAlternate: '#F9F9F9',
-};
+}

@@ -6,4 +6,4 @@ export default {
     lg: '17px',
     xl: '19px',
   },
-};
+}

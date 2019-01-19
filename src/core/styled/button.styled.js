@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { color } from 'core/commons';
-import { baseStyle as boxStyle } from 'core/styled/box.styled';
+import styled from 'styled-components'
+import { color } from 'core/commons'
+import { baseStyle as boxStyle } from 'core/styled/box.styled'
 
 const StyledButton = styled.div`
 font-family: Roboto;
@@ -11,6 +11,6 @@ cursor: pointer;
 color: ${props => (props ? props.color : color.light)};
 background-color: ${props => (props ? props.bg : color.primary)};
 ${boxStyle}
-`;
+`
 
-export default StyledButton;
+export default StyledButton
