@@ -1,4 +1,5 @@
 export default {
+  text: '#313130',
   textMuted: '#C0C0C0',
   primary: '#52BEEC',
   primaryLight: '#8AD3F3',
