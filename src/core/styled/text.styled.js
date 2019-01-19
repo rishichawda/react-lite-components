@@ -27,6 +27,6 @@ cursor: pointer;
 color: ${props => (props.color ? props.color : color.primary)};
 ${props => (props.nounderline ? 'text-decoration: none;' : '')}
 &:hover {
-    color: ${props => (props.hoverColor ? props.hoverColor : color.primaryDark)};
+    color: ${props => (props.hoverColor ? props.hoverColor : color.primaryActive)};
 }
 `
