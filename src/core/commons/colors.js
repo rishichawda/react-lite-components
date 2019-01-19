@@ -1,0 +1,18 @@
+export default {
+  textMuted: '#C0C0C0',
+  primary: '#52BEEC',
+  primaryLight: '#8AD3F3',
+  primaryDark: '#23A9E3',
+  success: '#27D124',
+  successLight: '#6AE867',
+  successDark: '#3EB23C',
+  error: '#E83030',
+  errorLight: '#E75D5D',
+  errorDark: '#C72525',
+  dark: '#1D1D1D',
+  darkSecondary: '#4B5255',
+  darkAlternate: '#070707',
+  light: '#FFFFFF',
+  lightSecondary: '#ECE8E8',
+  lightAlternate: '#F9F9F9',
+};
