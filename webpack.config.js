@@ -1,17 +1,30 @@
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
+const glob = require('glob')
 
 // Change this to get source maps while development.
 const devtool = ''
 
+function getFiles(filePattern) {
+  const files = {
+    'index.js': path.join(__dirname, 'src/index.js'),
+  }
+  glob.sync(filePattern).forEach((file) => {
+    files[file.replace('src/components', '')] = path.join(__dirname, file)
+  })
+  console.log(files)
+  return files
+}
+
 // Module entry point.
-const entryPoint = './src/index.js'
+const entryPoint = getFiles('src/components/**/index.js')
 
 // Output path and targets.
 const output = {
-  path: path.resolve('lib'),
-  filename: 'index.js',
+  path: path.resolve(__dirname, 'lib'),
+  filename: '[name]',
   libraryTarget: 'commonjs2',
+  chunkFilename: 'commons'
 }
 
 // Exclude react, react-dom and styled-components from the bundle.
@@ -83,8 +96,6 @@ module.exports = {
   externals: externalModules,
   stats: statsConfig,
   optimization: {
-    splitChunks,
-    runtimeChunk: false,
     minimizer: [
       new UglifyJSPlugin({
         sourceMap: true,
