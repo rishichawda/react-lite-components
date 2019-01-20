@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/circleci/project/github/rishichawda/react-lite-components/master.svg?style=flat-square"
          alt="ci-build">
   </a>
-  <a href="">
+  <a href="https://github.com/rishichawda/react-lite-components/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/rishichawda/react-lite-components.svg?style=flat-square"
          alt="license">
   </a><br/>
