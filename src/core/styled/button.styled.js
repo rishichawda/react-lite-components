@@ -8,6 +8,8 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 line-height: normal;
+padding: ${props => typeof props.p === 'string' ? props.p : '0.5em'};
+${props => (props.shadow ? `box-shadow:${props.shadow};` : '')}
 font-size: ${props => (props.size ? props.size : size.font.md)};
 cursor: pointer;
 color: ${props => (props.color ? props.color : color.light)};
@@ -17,6 +19,7 @@ outline: none;
 border: none;
 &:active {
     background-color: ${props => (props.activeBg ? props.activeBg : color.primaryActive)};
+    transform: scale(0.961);
 }
 `
 
