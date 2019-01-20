@@ -17,7 +17,6 @@ const output = {
 // Exclude react, react-dom and styled-components from the bundle.
 const externalModules = [
   'react',
-  'react-dom',
   'styled-components'
 ]
 
@@ -37,12 +36,6 @@ const statsConfig = {
 const splitChunks = {
   cacheGroups: {
     default: false,
-    styles: {
-      name: 'styles',
-      test: /\.css$/,
-      chunks: 'all',
-      enforce: true,
-    },
     commons: {
       test: /[\\/]node_modules[\\/]/,
       name: 'vendor_app',
