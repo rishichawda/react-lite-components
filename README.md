@@ -4,4 +4,10 @@
 ![](https://img.shields.io/bundlephobia/minzip/react-lite-components.svg?style=flat-square)
 
 
-A set of lightweight styled components
+A set of lightweight styled components focused on minimum bundle size, consistency and responsive design.
+
+## Installation :
+
+```
+npm install react-lite-components styled-components --save
+```
