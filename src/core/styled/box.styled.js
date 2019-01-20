@@ -28,10 +28,21 @@ flex-direction: column;
 
 export const StyledTooltip = styled(Flex.row)`
 position: absolute;
-bottom: -1.5em;
-padding: 0.2em;
+bottom: -2.5em;
+padding: 0.3em;
 font-size: ${size.font.sm};
-box-shadow: ${borderStyle.boxShadowmed};
+filter: drop-shadow(${borderStyle.boxShadowmed});
 color: ${color.light}
 background-color: ${props => props.bg ? props.bg : color.dark}70;
+&:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    transform: rotate(180deg);
+    border-color: ${props => props.bg ? props.bg : color.dark}70 transparent transparent transparent;
+}
 `;
