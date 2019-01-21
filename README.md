@@ -4,6 +4,8 @@
   React Lite Components
   <br>
 </h1>
+# react-lite-components
+
 <p align="center">
   <a href="https://www.npmjs.com/package/react-lite-components">
     <img src="https://img.shields.io/npm/v/react-lite-components.svg?style=flat-square"
@@ -25,13 +27,9 @@
     <img src="https://img.shields.io/github/license/rishichawda/react-lite-components.svg?style=flat-square"
          alt="license">
   </a><br/>
-  <a href="">
-    <img src="https://img.shields.io/david/rishichawda/react-lite-components.svg?style=flat-square"
-         alt="dependencies">
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/david/dev/rishichawda/react-lite-components.svg?style=flat-square"
-         alt="dev-dependencies">
+  <a href="https://greenkeeper.io/">
+    <img src="https://badges.greenkeeper.io/rishichawda/react-lite-components.svg?token=157ae3a46a43f4ff56ddc116cf7532afc234c046c246abeca3a9fe9079087201&ts=1548087343639&style=flat-square"
+         alt="license">
   </a>
   </p>
 
