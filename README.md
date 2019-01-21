@@ -35,7 +35,7 @@
   </a>
   </p>
 
-A set of lightweight styled components focused on minimum bundle size, simplicity, consistency and responsive design.
+_<p align='center'>A React UI library focused on minimum bundle size, simplicity, consistency and responsive design.</p>_
 
 ## Installation :
 
