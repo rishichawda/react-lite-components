@@ -30,6 +30,7 @@ const output = {
 // Exclude react, react-dom and styled-components from the bundle.
 const externalModules = [
   'react',
+  'react-dom',
   'styled-components'
 ]
 
