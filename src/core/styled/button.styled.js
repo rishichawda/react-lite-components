@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { color, size } from 'core/commons'
 import { baseStyle as boxStyle } from 'core/styled/box.styled'
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
 ${boxStyle}
 font-family: Roboto;
 font-style: normal;
@@ -23,4 +23,22 @@ border: none;
 }
 `
 
-export default StyledButton
+export const ToggleButton = styled.div`
+height: 20px;
+width: 30px;
+border-radius: 15px;
+background-color: ${props => props.isOn ? props.activeBg : props.inactiveBg};
+display:flex;
+position: relative;
+`
+
+export const ToggleSwitch = styled.div`
+height: 18px;
+border-radius: 50%;
+width: 18px;
+background-color: white;
+align-self: center;
+position: absolute;
+${props => props.isOn ? '' : `left: 0`};
+${props => props.isOn ? `right: 0` : ''};
+`
