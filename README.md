@@ -1,4 +1,12 @@
-# react-lite-components
+<h1 align="center">
+  <a href=""><img src="https://raw.githubusercontent.com/rishichawda/react-lite-components/master/assets/logo.png" alt="React Lite Components" width="150"></a>
+  <br/>
+  React Lite Components
+  <br>
+</h1>
+
+##
+
 <p align="center">
   <a href="https://www.npmjs.com/package/react-lite-components">
     <img src="https://img.shields.io/npm/v/react-lite-components.svg?style=flat-square"
