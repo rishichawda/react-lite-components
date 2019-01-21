@@ -35,10 +35,16 @@
   </a>
   </p>
 
-A set of lightweight styled components focused on minimum bundle size, consistency and responsive design.
+A set of lightweight styled components focused on minimum bundle size, simplicity, consistency and responsive design.
 
 ## Installation :
 
 ```
 npm install react-lite-components styled-components --save
 ```
+
+**Note :** This library is a work in progress. Although the **_components can be used_** - they may lack features that will be included in the near future.
+
+But that also means there's a lot of space for contributions to this library! :tada:
+
+If you are willing to contribute, please take a look at the [issues](https://github.com/rishichawda/react-lite-components/issues), find an issue or feature that you want to contribute to, fork the repo and raise a PR!
