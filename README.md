@@ -4,7 +4,6 @@
   React Lite Components
   <br>
 </h1>
-# react-lite-components
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-lite-components">
