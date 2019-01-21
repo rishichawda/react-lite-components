@@ -1,12 +1,9 @@
 <h1 align="center">
-  <a href=""><img src="https://raw.githubusercontent.com/rishichawda/react-lite-components/master/assets/logo.png" alt="React Lite Components" width="150"></a>
+  <a href=""><img src="https://github.com/rishichawda/react-lite-components/blob/master/assets/logo.png" alt="React Lite Components" width="290"></a>
   <br/>
   React Lite Components
   <br>
 </h1>
-
-##
-
 <p align="center">
   <a href="https://www.npmjs.com/package/react-lite-components">
     <img src="https://img.shields.io/npm/v/react-lite-components.svg?style=flat-square"
@@ -38,10 +35,16 @@
   </a>
   </p>
 
-A set of lightweight styled components focused on minimum bundle size, consistency and responsive design.
+_<p align='center'>A React UI library focused on minimum bundle size, simplicity, consistency and responsive design.</p>_
 
 ## Installation :
 
 ```
 npm install react-lite-components styled-components --save
 ```
+
+**Note :** This library is a work in progress. Although the **_components can be used_** - they may lack features that will be included in the near future.
+
+But that also means there's a lot of space for contributions to this library! :tada:
+
+If you are willing to contribute, please take a look at the [issues](https://github.com/rishichawda/react-lite-components/issues), find an issue or feature that you want to contribute to, fork the repo and raise a PR!
