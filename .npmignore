@@ -6,3 +6,7 @@ src
 .eslintignore    
 .eslintrc
 webpack.config.js
+_config.yml
+/.circleci
+/assets
+test
