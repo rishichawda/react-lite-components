@@ -36,6 +36,8 @@ _<p align='center'>A React UI library focused on minimum bundle size, simplicity
 
 ## Installation :
 
+[![Join the chat at https://gitter.im/react-lite-components/community](https://badges.gitter.im/react-lite-components/community.svg)](https://gitter.im/react-lite-components/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
 npm install react-lite-components styled-components --save
 ```
