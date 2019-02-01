@@ -30,13 +30,15 @@
     <img src="https://badges.greenkeeper.io/rishichawda/react-lite-components.svg?token=157ae3a46a43f4ff56ddc116cf7532afc234c046c246abeca3a9fe9079087201&ts=1548087343639&style=flat-square"
          alt="license">
   </a>
+  <a href="https://gitter.im/react-lite-components/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+    <img src="https://badges.gitter.im/react-lite-components/community.svg?style=flat-square"
+         alt="license">
+  </a>
   </p>
 
 _<p align='center'>A React UI library focused on minimum bundle size, simplicity, consistency and responsive design.</p>_
 
 ## Installation :
-
-[![Join the chat at https://gitter.im/react-lite-components/community](https://badges.gitter.im/react-lite-components/community.svg)](https://gitter.im/react-lite-components/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ```
 npm install react-lite-components styled-components --save
