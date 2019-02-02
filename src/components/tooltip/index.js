@@ -5,11 +5,11 @@ import PropTypes from 'prop-types'
 import { StyledTooltip, Flex } from 'core/styled/box.styled'
 
 export default class Tooltip extends Component {
+
   static propTypes = {
     children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]).isRequired,
     tooltipText: PropTypes.string,
   }
-
 
   static defaultProps = {
     tooltipText: 'Tooltip'
