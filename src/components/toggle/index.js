@@ -5,6 +5,13 @@ import { ToggleButton, ToggleSwitch } from 'core/styled/button.styled'
 import { color } from 'core/commons';
 
 class Toggle extends Component {
+
+   static propTypes = {
+    onColor: PropTypes.string,
+    offColor: PropTypes.string,
+    onChange: PropTypes.func,
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -35,12 +42,6 @@ class Toggle extends Component {
       </ToggleButton>
     )
   }
-}
-
-Toggle.propTypes = {
-  onColor: PropTypes.string,
-  offColor: PropTypes.string,
-  onChange: PropTypes.func,
 }
 
 Toggle.defaultProps = {
