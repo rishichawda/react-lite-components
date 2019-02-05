@@ -56,7 +56,7 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
     "node-sass": "^4.11.0",
-    "nyc": "^13.1.0",
+    "nyc": "13.1.0",
     "react-hot-loader": "^4.3.6",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -66,7 +66,7 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.7"
   },
-  "peerDependencies": {
+  "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.7.0",
     "styled-components": "^4.1.3"
