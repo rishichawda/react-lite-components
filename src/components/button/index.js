@@ -10,7 +10,7 @@ const Button = ({
 }) => {
   const styles = style || undefined
   const props = {
-    bg : type ? (color[type]) : bg,
+    bg : type ? color[type] : bg,
     color: type === 'light' ? color.dark : fontColor,
     activeBg: type ? color[`${type}Active`] : activeBg,
     ...rest,
@@ -26,7 +26,7 @@ Button.propTypes = {
   type: PropTypes.string,
   bg: PropTypes.string,
   activeBg: PropTypes.string,
-  color: PropTypes.string,
+  fontColor: PropTypes.string,
 }
 
 Button.defaultProps = {
@@ -35,7 +35,7 @@ Button.defaultProps = {
   type: 'primary',
   bg: color.primary,
   activeBg: undefined,
-  color: color.light,
+  fontColor: color.light,
 }
 
 export default Button
