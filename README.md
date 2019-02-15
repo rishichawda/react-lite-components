@@ -54,7 +54,7 @@ If you are willing to contribute, please take a look at the [issues](https://git
 
 #### How to contribute?
 
-First, you'll need to fork this repository, and then clone it to your local and run `npm install` inside the directory.
+First, you'll need to clone your fork of this repository to local, checkout to `development` branch and run `npm install` inside the directory.
 
 Next, clone the react and webpack boilerplate for development purpose from [here](https://github.com/rishichawda/minimal-react-boilerplate). After you have cloned the boilerplate, add the following lines to `webpack.common.js`:
 
