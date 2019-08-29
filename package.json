@@ -58,7 +58,7 @@
     "node-sass": "^4.11.0",
     "nyc": "13.1.0",
     "react-hot-loader": "^4.3.6",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^8.0.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.1",
